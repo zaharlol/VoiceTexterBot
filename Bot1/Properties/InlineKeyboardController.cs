@@ -29,6 +29,7 @@ namespace VoiceTexterBot.Controllers
             {
                 "ru" => " Русский",
                 "en" => " Английский",
+                "gr" => " Немецкий",
                 _ => String.Empty
             };
 
