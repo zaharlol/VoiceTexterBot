@@ -36,7 +36,7 @@ namespace VoiceTexterBot
             return new AppSettings()
             {
                 DownloadsFolder = "C:\\Users\\denma\\Downloads",
-                BotToken = "5995112598:AAGpOPnuIkSz8bIkucyPIOz-YAma3mKHqBM",
+                BotToken = "6250721316:AAG-6fGFtO0y4IA2WXoOI3SZ_m7cXGpDVko",
                 AudioFileName = "audio",
                 InputAudioFormat = "ogg",
                 OutputAudioFormat = "wav",
@@ -56,7 +56,7 @@ namespace VoiceTexterBot
             services.AddTransient<TextMessageController>();
             services.AddTransient<InlineKeyboardController>();
             // Регистрируем объект TelegramBotClient c токеном подключения
-            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("5995112598:AAGpOPnuIkSz8bIkucyPIOz-YAma3mKHqBM"));
+            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("6250721316:AAG-6fGFtO0y4IA2WXoOI3SZ_m7cXGpDVko"));
             // Регистрируем постоянно активный сервис бота
             services.AddHostedService<Bot>();
         }
